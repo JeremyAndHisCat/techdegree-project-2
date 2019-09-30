@@ -103,6 +103,22 @@ main {
   height: 14em;
 }
 
+/* SKILLS SECTION */
+
+#skills ul {
+  margin: 0 auto;
+  padding: 0;
+}
+#skills li {
+  padding: 0.75em;
+  display: inline-block;
+  color: darkred;
+}
+#skills {
+  margin-top: 0;
+  padding-bottom: 3em;
+}
+
 /* CONTACT SECTION */
 
 #contact {
@@ -180,24 +196,25 @@ footer {
   margin: 0;
 }
 
+/* ! this was in mobile only */
+#expanded-nav {
+  display: none !important;
+}
+#bottom-nav l1 {
+  padding: 0;
+}
+/* ! end */
+
 /* MEDIA QUERIES */
 
-/* SCREEN WIDTHS BELOW 769 PIXELS */
+/* SCREEN WIDTHS ABOVE 768 PIXELS */
 
-@media screen and (max-width: 768px) {
-  #expanded-nav {
-    display: none !important;
-  }
-  #bottom-nav l1 {
-    padding: 0;
-  }
-}
-
-/* SCREEN WIDTHS BETWEEN 769 AND 1024 PIXELS */
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #back-to-top {
     display: none !important;
+  }
+  #expanded-nav {
+    display: inline !important;
   }
   body {
     margin-top: 4em;
